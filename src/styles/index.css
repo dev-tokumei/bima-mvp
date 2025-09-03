@@ -1,0 +1,89 @@
+@import 'tailwindcss';
+:root {
+  --swiper-navigation-size: 24px !important;
+}
+* {
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.shdw:hover {
+  box-shadow: 0 0 10px rgba(251, 190, 7, 0.5);
+}
+
+.shdw {
+  box-shadow: 0 0 10px rgba(251, 190, 7, 0.5);
+}
+/* .box_none {
+  display: block;
+} */
+
+.mobile_slider {
+  display: none;
+}
+
+.mobile_navbar {
+  display: none;
+}
+@media screen and (max-width: 1280px) {
+  .box_none {
+    display: none;
+  }
+  .mobile_slider {
+    display: block;
+  }
+  .mobile_navbar {
+    display: block;
+  }
+  .hide_sm {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .img {
+    display: none;
+  }
+}
+
+.swiper-slide {
+  height: auto !important;
+}
+
+.bg_img {
+  background-image: url('https://bima.tj/static/media/banner-bg.40c8fa7a.svg');
+  background-repeat: no-repeat;
+  background-position: bottom left;
+  background-size: contain;
+}
+
+.swiper-button-prev {
+  height: 30px !important;
+  width: 30px !important;
+  box-shadow: rgba(53, 50, 56, 0.14) 0px 5px 20px;
+  color: #000 !important;
+  font-size: 10px !important;
+
+  background-color: rgb(255, 255, 255, 0.5) !important;
+}
+
+.swiper-button-prev,
+.swiper-rtl .swiper-button-next {
+  position: absolute;
+  right: 49px !important;
+  left: auto !important;
+}
+
+.swiper-button-next {
+  height: 30px !important;
+  width: 30px !important;
+  box-shadow: rgba(53, 50, 56, 0.14) 0px 5px 20px;
+  color: #000 !important;
+  background-color: rgb(255, 255, 255, 0.5) !important;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  position: absolute;
+  top: 420px !important;
+}
